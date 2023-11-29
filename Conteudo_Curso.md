@@ -101,6 +101,44 @@ Trazer o contexto do grid para um container por meio do display: grid;
 Realizar a contagem das linhas do grid horizontais e verticais;
 Definir o posicionamento inicial e final de um grid item em relação às linhas e colunas do layout.
 
-## Aula 03 - 
+## Aula 03 - Mais do Flex
 
-### Aula 03 -  - Video 1
+### Aula 03 - Alterando eixos - Video 1
+
+Nesta aula do curso "Praticando CSS: Grid e Flexbox", o instrutor Luan ensina como organizar as áreas das seções de categorias, destaques e próximos eventos utilizando o Flexbox. Ele mostra como inspecionar a página no navegador e aplicar a largura adequada para dispositivos móveis. Em seguida, ele utiliza o Flexbox para organizar os elementos da seção de categorias em uma coluna vertical, adicionando espaçamento entre eles. O objetivo é deixar a seção de categorias organizada para dispositivos móveis. O instrutor ressalta que nos próximos vídeos serão abordados mais conceitos e práticas relacionadas ao Flexbox.
+
+### Aula 03 - Distribuindo colunas com Flex - Video 2
+
+Nesta aula, o instrutor Luan trabalha na seção de categorias do projeto Culturama. Ele explica o motivo de usar display: flex em vez de display: block para alcançar o layout desejado. Em seguida, ele divide a coluna única do layout mobile em duas colunas para a versão tablet usando flex-wrap: wrap. Ele também aplica espaçamento entre as colunas com column-gap e entre as linhas com row-gap. Luan adiciona comentários no código para deixá-lo mais organizado e menciona que na próxima etapa irão praticar mais conceitos de Flexbox.
+
+### Aula 03 - Estilizando elementos na div - Video 3
+
+Nesta aula, o instrutor Luan aborda a estilização de elementos na div utilizando Flexbox. Ele explica que é necessário alterar a propriedade display de block para flex para que os elementos fiquem na mesma linha. O instrutor mostra como aplicar o display: flex na classe destaques e também menciona a necessidade de alinhar verticalmente os elementos usando align-items: center e adicionar espaçamento entre eles usando column-gap. Ele também aborda a responsividade do projeto e mostra como fazer a barra de destaques ocupar toda a largura disponível usando **flex-grow: 1**. O instrutor finaliza deixando algumas atividades para praticar a propriedade flex-grow.
+
+### Aula 03 - Para saber mais: flex-grow
+
+A propriedade flex-grow é utilizada para expandir elementos de acordo com o espaço disponível em um flex-container. Porém, como é possível calcular essa proporção?
+
+- Aplicando flex-grow com o mesmo valor para todos os elementos  
+Supondo que o container tenha 1000px de largura, e 4 cards com 200px cada, sobrando 200px de espaço livre. Esse espaço livre será divido igualmente e somado à largura de cada item, dando o total de 250px para cada item.
+
+- Aplicando flex-grow com valores diferentes para cada elemento
+Supondo que o container tenha 1000px de largura, e 2 cards com 200px de largura, sobrando 600px de espaço livre.  
+Aplicando no primeiro card flex-grow: 1, e no segundo card flex-grow: 2. O segundo card irá crescer proporcionalmente o dobro que o card 1, ficando com mais 400px, dando o total de 600px de width. Já o primeiro card terá mais 200px, dando o total de 400px de width.
+
+>Importante destacar que o elemento não fica com o dobro de largura, porém cresceu proporcionalmente o dobro  
+Obs: valores de gap, border e, padding podem influenciar no comportamento do flex-grow.
+
+### Aula 03 - Preparando para o desafio - Video 4
+
+Nesta aula, o palestrante aborda a utilização do Flexbox para organizar a seção de próximos eventos do projeto Culturama. Ele mostra como aplicar as propriedades display: flex, flex-wrap: wrap, column-gap: 1.5rem e row-gap: 1rem para criar uma grade flexível com espaçamento adequado. Além disso, ele demonstra como utilizar a propriedade flex-grow: 1 para ocupar toda a largura do container e define um limite de largura com max-width: 400px. O palestrante também menciona o uso da propriedade justify-content: center para centralizar o botão "ver mais" e a propriedade justify-content: end para posicionar o botão no lado direito em telas de tablets. Por fim, ele sugere o uso do Grid para organizar os elementos dentro de cada li.
+
+### Aula 03 Conclusão - Nessa aula, você aprendeu como:
+
+Alterar eixos com a propriedade flex-direction;
+Organizar conjuntos de itens em um container com a propriedade flex-grow;
+Unir propriedades do flexbox em conjunto de media query para obter o resultado de layouts responsivos.
+
+## Aula 04 - 
+
+### Aula 04 -  - Video 1
