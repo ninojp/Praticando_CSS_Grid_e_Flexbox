@@ -139,6 +139,8 @@ Alterar eixos com a propriedade flex-direction;
 Organizar conjuntos de itens em um container com a propriedade flex-grow;
 Unir propriedades do flexbox em conjunto de media query para obter o resultado de layouts responsivos.
 
-## Aula 04 - 
+## Aula 04 - Mergulhando no Grid
 
-### Aula 04 -  - Video 1
+### Aula 04 - A largura das colunas - Video 1
+
+Nesta aula, Beatriz discute sobre a proporção das colunas em um projeto de banner e como ajustar essa proporção no projeto em desenvolvimento. Ela explica como utilizar a propriedade grid-template-columns e a função calc() para definir a largura das colunas e como ajustar o espaçamento entre elas. Essas informações são importantes para garantir um layout responsivo e harmonioso.

@@ -46,8 +46,21 @@
     column-gap: 1.5rem;
     justify-content: center;
 }
-.agenda__item {
-    flex-grow: 1;
+.agenda__item{
+    display: grid;
+    max-width: 400px;
+}
+.agenda__item img{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.agenda__informacoes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.agenda__atracao {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 /* @media para telas acima de 720px */
