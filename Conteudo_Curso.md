@@ -182,6 +182,7 @@ Nesta aula, a instrutora Beatriz explica como associar os elementos HTML às ár
 Nesta aula, aprendemos a manipular colunas e linhas em um grid utilizando CSS Grid. A questão abordada foi a inversão da largura das colunas em uma lista. Para isso, adicionamos a propriedade grid-template-columns com o valor 1fr auto no bloco da classe .eventos__item. Além disso, ajustamos as linhas utilizando a propriedade grid-template-rows com o valor auto repeat(2,1fr) auto. Com essas alterações, conseguimos manipular simultaneamente as colunas e linhas do grid.
 
 ### Aula 04 Concluido - Nessa aula, você aprendeu como:
+
 Criar linhas e colunas em um Layout, calculando as alturas e larguras;
 Posicionar itens por meio da criação de um template com áreas do Grid;
 Utilizar a unidade de medida fr;
@@ -190,3 +191,23 @@ Utilizar a função do css repeat().
 ## Aula 05 - Alinhando Grid e Flex Itens
 
 ### Aula 05 - Alinhamento no Grid - Video 1
+
+Nesta aula, o instrutor aborda o alinhamento vertical de elementos em uma lista de eventos utilizando Grid e Flexbox. Ele mostra como utilizar a propriedade align-self para alinhar individualmente os títulos h3 e h5. Com essas alterações, os títulos ficarão alinhados verticalmente conforme desejado. O instrutor também menciona que a propriedade align-self é compartilhada entre o flex e o grid.
+
+### Aula 05 - Alinhamento no Flex - Video 2
+
+Nesta aula, o instrutor finaliza o projeto Culturama ajustando o rodapé do site. Ele utiliza as propriedades display: flex;, flex-wrap: wrap; e justify-content: space-between; para alinhar os elementos do rodapé e criar um espaçamento uniforme entre eles. Também utiliza a propriedade align-self: end; para posicionar a logo e a frase "Desenvolvido por Alura" no final da linha e na vertical. O instrutor verifica o resultado para diferentes tamanhos de tela e conclui o projeto.
+
+### Aula 05 - Para saber mais: Flex e Grid - diferenças no alinhamento
+
+Assim como a propriedade Gap, que é utilizada dentro dos contextos de Grid e Flexbox, a propriedade Align também é compartilhada entre eles, porém existem algumas diferenças em seu uso!
+
+Alinhamento no Grid
+Para gerar um alinhamento vertical dentro do Grid, utiliza-se a propriedade align. E para criar um alinhamento horizontal, usa-se a propriedade justify. Ambas são acompanhadas de outras propriedades que vão dizer se o alinhamento será de um único item, todos os itens ou do container.
+
+Alinhamento no Flex
+No flex, não utiliza-se o justify para alinhar horizontalmente como no grid, o alinhamento no flex irá ser determinado pela propriedade flex-direction. Se for o padrão, ou seja, flex-direction: row, o align irá alinhar na direção vertical e caso seja flex-direction: column que está sendo aplicado, align irá alinhar na direção horizontal.
+
+### Aula 05 - Conclusão
+
+Nesta aula, os instrutores parabenizam os alunos pela conclusão do curso de Flex e Grid. Eles mencionam o projeto Culturama como exemplo de um layout moderno e incentivam os alunos a compartilharem no LinkedIn com as hashtags #ALURA e #APRENDINAALURA. Beatriz destaca o Discord como um ambiente colaborativo de aprendizagem e a importância de avaliar e deixar feedback sobre o curso. O vídeo termina com a promessa de um próximo curso.
