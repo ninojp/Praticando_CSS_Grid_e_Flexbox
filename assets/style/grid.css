@@ -1,8 +1,10 @@
+/* BANNER */
 .banner{
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     /* grid-template-rows: 33% 33% 33%; */
-    gap: 1rem;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
 }
 /* .banner img:nth-child(1){
     grid-column: 1/5;
@@ -27,10 +29,81 @@
     grid-row: 2/4;
 }
 
+/* EVENTOS */
+.eventos__item{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto repeat(2, 1fr) auto;
+    grid-template-areas:
+     "img img"
+     "h3 h3"
+     "h4 h4"
+     "h5 button";
+}
+.eventos__item img{
+    grid-area: img;
+}
+.eventos__item h3{
+    grid-area: h3;
+}
+.eventos__item h4{
+    grid-area: h4;
+}
+.eventos__item h5{
+    grid-area: h5;
+}
+.eventos__item button{
+    grid-area: button;
+    justify-content: end;
+}
+
+
+/* AGENDA */
+.agenda__item{
+    display: grid;
+    /* Professora usou */
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr; */
+    grid-template-areas: "img img"
+    "info atracao";
+    max-width: 400px;
+}
+.agenda__item img{
+    /* Professora usou */
+    /* grid-column: 1/ 3; */
+    grid-area: img;
+}
+.agenda__informacoes{
+    grid-area: info;
+}
+.agenda__atracao{
+    grid-area: atracao;
+}
+/* como fiz antes */
+/* .agenda__item{
+    display: grid;
+    max-width: 400px;
+}
+.agenda__item img{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.agenda__informacoes {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.agenda__atracao {
+    grid-column: 2/3;
+    grid-row: 2/3;
+} */
+
 @media (min-width:720px) {
+    /* BANNER */
     .banner{
     display: grid ;
-    gap: 1rem;
+    grid-template-columns: calc(50% - 0.75rem) auto auto;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
     }
     .banner img:nth-child(1){
         grid-column: 1/2;

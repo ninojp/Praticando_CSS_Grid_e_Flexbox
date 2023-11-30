@@ -144,3 +144,49 @@ Unir propriedades do flexbox em conjunto de media query para obter o resultado d
 ### Aula 04 - A largura das colunas - Video 1
 
 Nesta aula, Beatriz discute sobre a proporção das colunas em um projeto de banner e como ajustar essa proporção no projeto em desenvolvimento. Ela explica como utilizar a propriedade grid-template-columns e a função calc() para definir a largura das colunas e como ajustar o espaçamento entre elas. Essas informações são importantes para garantir um layout responsivo e harmonioso.
+
+### Aula 04 - Para saber mais: o valor auto
+
+No vídeo anterior, foi aplicado os dois valores auto para que você pudesse entender melhor que no grid, cada valor se refere a uma determinada coluna, o primeiro valor é para a primeira, o segundo para a segunda e assim por diante.  
+Entretanto, neste caso, não há a necessidade de especificar que o valor é auto, isso porque quando não especificamos, o navegador já interpreta esse valor por padrão.  
+E por que neste caso?
+Porque existem algumas situações que será necessário manter a escrita do valor auto.
+
+Imagine que eu e você gostaríamos de aplicar o valor calc(50% - 0.75rem) na segunda ou terceira coluna ao invés da primeira. Como seria?
+Segunda coluna  
+ .banner {
+      grid-template-columns: auto calc(50% - 0.75rem);
+  }
+Terceira coluna  
+ .banner {
+      grid-template-columns: auto auto calc(50% - 0.75rem);
+  }  
+
+Agora, para que seja aplicada na coluna correta é indispensável a escrita do auto, visto que o navegador não tem como adivinhar sozinho onde o valor deve ser aplicado. Com isso, podemos chegar a conclusão que:
+> Se o valor auto for um antecessor do outro valor que está sendo aplicado, ele deverá estar declarado.
+
+### Aula 04 - Desenhando um template - Video 2
+
+Nesta aula, Beatriz explica como utilizar o Figma para desenhar um grid de elementos em um projeto. Ela mostra um exemplo de um elemento <li> que contém diferentes itens, como uma imagem, o nome do evento, a data do evento e o local do evento. Esses itens são considerados como "grid items" e também podem ser interpretados como áreas de um template no grid.
+
+Beatriz propõe adicionar a classe .eventos__item ao elemento <li> no arquivo grid.css e aplicar a propriedade display: grid a essa classe. Em seguida, ela utiliza a propriedade grid-template-areas para definir as áreas do grid. Cada área é definida entre aspas e em uma linha separada. No exemplo dado, as áreas são nomeadas como "imagem", "nome", "data" e "local botao".
+
+Após salvar as alterações, o grid ficará desorganizado na página, mas terá sido criado com duas colunas e quatro linhas. No entanto, os "grid items" ainda não estão na posição correta. Beatriz menciona que irá corrigir isso em breve, mas essa parte não é abordada no trecho do vídeo fornecido.
+
+### Aula 04 - Grid Area - Video 3
+
+Nesta aula, a instrutora Beatriz explica como associar os elementos HTML às áreas do grid utilizando a propriedade grid-area. Ela mostra como definir as áreas do grid para as classes .eventos__item img, .eventos__item h3, .eventos__item h4, .eventos__item h5 e .eventos__item button, atribuindo a cada uma delas um nome correspondente. Essas associações permitem posicionar os elementos nas áreas corretas do grid, de acordo com o projeto do Figma. A propriedade grid-template-areas cria e nomeia as áreas do grid, enquanto a propriedade grid-area associa os elementos às áreas utilizando o nome da área. No próximo vídeo, será abordado o trabalho com a dimensão entre as linhas e colunas do grid.
+
+### Aula 04 - Fr, repeat() e altura das linhas - Video 4
+
+Nesta aula, aprendemos a manipular colunas e linhas em um grid utilizando CSS Grid. A questão abordada foi a inversão da largura das colunas em uma lista. Para isso, adicionamos a propriedade grid-template-columns com o valor 1fr auto no bloco da classe .eventos__item. Além disso, ajustamos as linhas utilizando a propriedade grid-template-rows com o valor auto repeat(2,1fr) auto. Com essas alterações, conseguimos manipular simultaneamente as colunas e linhas do grid.
+
+### Aula 04 Concluido - Nessa aula, você aprendeu como:
+Criar linhas e colunas em um Layout, calculando as alturas e larguras;
+Posicionar itens por meio da criação de um template com áreas do Grid;
+Utilizar a unidade de medida fr;
+Utilizar a função do css repeat().
+
+## Aula 05 - Alinhando Grid e Flex Itens
+
+### Aula 05 - Alinhamento no Grid - Video 1
